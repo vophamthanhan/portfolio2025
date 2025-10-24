@@ -13,22 +13,26 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState<"about" | "resume" | "work">("about");
 
   // Fetch portfolio data
+  // Get owner info first
+  const { data: owner } = trpc.profile.owner.useQuery();
+  const displayUserId = user?.id || owner?.id || "";
+  
   const { data: projects = [] } = trpc.portfolio.list.useQuery();
   const { data: profile } = trpc.profile.get.useQuery(
-    { userId: user?.id || "" },
-    { enabled: !!user?.id }
+    { userId: displayUserId },
+    { enabled: !!displayUserId }
   );
   const { data: experiences = [] } = trpc.experience.list.useQuery(
-    { userId: user?.id || "" },
-    { enabled: !!user?.id }
+    { userId: displayUserId },
+    { enabled: !!displayUserId }
   );
   const { data: education = [] } = trpc.education.list.useQuery(
-    { userId: user?.id || "" },
-    { enabled: !!user?.id }
+    { userId: displayUserId },
+    { enabled: !!displayUserId }
   );
   const { data: skills = [] } = trpc.skills.list.useQuery(
-    { userId: user?.id || "" },
-    { enabled: !!user?.id }
+    { userId: displayUserId },
+    { enabled: !!displayUserId }
   );
 
   // Memoize computed values to avoid recalculation on every render

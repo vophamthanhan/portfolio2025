@@ -73,6 +73,12 @@ export const appRouter = router({
   
   // Profile router
   profile: router({
+    // Get portfolio owner (first user)
+    owner: publicProcedure.query(async () => {
+      const { getOwner } = await import("./db");
+      return getOwner();
+    }),
+    
     get: publicProcedure.input((val: unknown) => val as { userId: string }).query(async ({ input }) => {
       const { getProfile } = await import("./db");
       return getProfile(input.userId);

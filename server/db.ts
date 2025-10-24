@@ -270,3 +270,12 @@ export async function deleteSkill(id: string) {
   
   await db.delete(skills).where(eq(skills.id, id));
 }
+
+// Get first user (portfolio owner)
+export async function getOwner() {
+  const db = await getDb();
+  if (!db) return undefined;
+  
+  const result = await db.select().from(users).limit(1);
+  return result.length > 0 ? result[0] : undefined;
+}
