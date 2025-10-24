@@ -1,0 +1,25 @@
+{
+  "query": "SELECT * FROM profile",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 263rhVSojRreLiL.root --database A8fyu726FoK4B4bJuSYf4e --execute SELECT * FROM profile",
+  "rows": [
+    {
+      "id": "903bb807-af17-11f0-b6df-a2180fc6c472",
+      "userId": "YeYvrTgxNMcwLCB3fEFBGz",
+      "fullName": "Vo Pham Thanh An",
+      "title": "Teaching Assistant & Data Engineer",
+      "bio": "I am a data-driven developer with strong skills in Python, MongoDB, and n8n, focusing on data engineering and AI solutions. I have built pipelines, automated data collection, and trained AI models to deliver actionable insights. I thrive on problem-solving, continuous improvement, and applying machine learning to create scalable, real-world impact.",
+      "location": "Da Nang, Vietnam",
+      "profileImageUrl": "NULL",
+      "email": "vophaman79@gmail.com",
+      "linkedin": "https://github.com/vophamthanhan",
+      "behance": "NULL",
+      "website": "https://github.com/vophamthanhan",
+      "createdAt": "2025-10-22 07:20:18",
+      "updatedAt": "2025-10-22 07:20:18"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tuserId\tfullName\ttitle\tbio\tlocation\tprofileImageUrl\temail\tlinkedin\tbehance\twebsite\tcreatedAt\tupdatedAt\n903bb807-af17-11f0-b6df-a2180fc6c472\tYeYvrTgxNMcwLCB3fEFBGz\tVo Pham Thanh An\tTeaching Assistant & Data Engineer\tI am a data-driven developer with strong skills in Python, MongoDB, and n8n, focusing on data engineering and AI solutions. I have built pipelines, automated data collection, and trained AI models to deliver actionable insights. I thrive on problem-solving, continuous improvement, and applying machine learning to create scalable, real-world impact.\tDa Nang, Vietnam\tNULL\tvophaman79@gmail.com\thttps://github.com/vophamthanhan\tNULL\thttps://github.com/vophamthanhan\t2025-10-22 07:20:18\t2025-10-22 07:20:18\n",
+  "stderr": "",
+  "execution_time_ms": 1273
+}

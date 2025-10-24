@@ -1,0 +1,138 @@
+{
+  "query": "SELECT * FROM skills",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 263rhVSojRreLiL.root --database A8fyu726FoK4B4bJuSYf4e --execute SELECT * FROM skills",
+  "rows": [
+    {
+      "id": "a3d5a24c-af17-11f0-b6df-a2180fc6c472",
+      "userId": "YeYvrTgxNMcwLCB3fEFBGz",
+      "name": "Python",
+      "category": "hardskill",
+      "sortOrder": "1",
+      "createdAt": "2025-10-22 07:20:51"
+    },
+    {
+      "id": "a3d5a318-af17-11f0-b6df-a2180fc6c472",
+      "userId": "YeYvrTgxNMcwLCB3fEFBGz",
+      "name": "JavaScript",
+      "category": "hardskill",
+      "sortOrder": "2",
+      "createdAt": "2025-10-22 07:20:51"
+    },
+    {
+      "id": "a3d5a355-af17-11f0-b6df-a2180fc6c472",
+      "userId": "YeYvrTgxNMcwLCB3fEFBGz",
+      "name": "TypeScript",
+      "category": "hardskill",
+      "sortOrder": "3",
+      "createdAt": "2025-10-22 07:20:51"
+    },
+    {
+      "id": "a3d5a38d-af17-11f0-b6df-a2180fc6c472",
+      "userId": "YeYvrTgxNMcwLCB3fEFBGz",
+      "name": "MongoDB",
+      "category": "hardskill",
+      "sortOrder": "4",
+      "createdAt": "2025-10-22 07:20:51"
+    },
+    {
+      "id": "a3d5a3c6-af17-11f0-b6df-a2180fc6c472",
+      "userId": "YeYvrTgxNMcwLCB3fEFBGz",
+      "name": "MySQL",
+      "category": "hardskill",
+      "sortOrder": "5",
+      "createdAt": "2025-10-22 07:20:51"
+    },
+    {
+      "id": "a3d5a3f9-af17-11f0-b6df-a2180fc6c472",
+      "userId": "YeYvrTgxNMcwLCB3fEFBGz",
+      "name": "Docker",
+      "category": "hardskill",
+      "sortOrder": "6",
+      "createdAt": "2025-10-22 07:20:51"
+    },
+    {
+      "id": "a3d5a487-af17-11f0-b6df-a2180fc6c472",
+      "userId": "YeYvrTgxNMcwLCB3fEFBGz",
+      "name": "TensorFlow",
+      "category": "hardskill",
+      "sortOrder": "7",
+      "createdAt": "2025-10-22 07:20:51"
+    },
+    {
+      "id": "a3d5a4bb-af17-11f0-b6df-a2180fc6c472",
+      "userId": "YeYvrTgxNMcwLCB3fEFBGz",
+      "name": "Flask",
+      "category": "hardskill",
+      "sortOrder": "8",
+      "createdAt": "2025-10-22 07:20:51"
+    },
+    {
+      "id": "a3d5a4ef-af17-11f0-b6df-a2180fc6c472",
+      "userId": "YeYvrTgxNMcwLCB3fEFBGz",
+      "name": "Next.js",
+      "category": "hardskill",
+      "sortOrder": "9",
+      "createdAt": "2025-10-22 07:20:51"
+    },
+    {
+      "id": "a3d5a51f-af17-11f0-b6df-a2180fc6c472",
+      "userId": "YeYvrTgxNMcwLCB3fEFBGz",
+      "name": "n8n",
+      "category": "hardskill",
+      "sortOrder": "10",
+      "createdAt": "2025-10-22 07:20:51"
+    },
+    {
+      "id": "a3d5a564-af17-11f0-b6df-a2180fc6c472",
+      "userId": "YeYvrTgxNMcwLCB3fEFBGz",
+      "name": "Web Scraping",
+      "category": "hardskill",
+      "sortOrder": "11",
+      "createdAt": "2025-10-22 07:20:51"
+    },
+    {
+      "id": "a3d5a59a-af17-11f0-b6df-a2180fc6c472",
+      "userId": "YeYvrTgxNMcwLCB3fEFBGz",
+      "name": "Machine Learning",
+      "category": "hardskill",
+      "sortOrder": "12",
+      "createdAt": "2025-10-22 07:20:51"
+    },
+    {
+      "id": "a3d5a5d2-af17-11f0-b6df-a2180fc6c472",
+      "userId": "YeYvrTgxNMcwLCB3fEFBGz",
+      "name": "Problem Solving",
+      "category": "softskill",
+      "sortOrder": "1",
+      "createdAt": "2025-10-22 07:20:51"
+    },
+    {
+      "id": "a3d5a607-af17-11f0-b6df-a2180fc6c472",
+      "userId": "YeYvrTgxNMcwLCB3fEFBGz",
+      "name": "Data Analysis",
+      "category": "softskill",
+      "sortOrder": "2",
+      "createdAt": "2025-10-22 07:20:51"
+    },
+    {
+      "id": "a3d5a637-af17-11f0-b6df-a2180fc6c472",
+      "userId": "YeYvrTgxNMcwLCB3fEFBGz",
+      "name": "Automation",
+      "category": "softskill",
+      "sortOrder": "3",
+      "createdAt": "2025-10-22 07:20:51"
+    },
+    {
+      "id": "a3d5a665-af17-11f0-b6df-a2180fc6c472",
+      "userId": "YeYvrTgxNMcwLCB3fEFBGz",
+      "name": "Continuous Improvement",
+      "category": "softskill",
+      "sortOrder": "4",
+      "createdAt": "2025-10-22 07:20:51"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tuserId\tname\tcategory\tsortOrder\tcreatedAt\na3d5a24c-af17-11f0-b6df-a2180fc6c472\tYeYvrTgxNMcwLCB3fEFBGz\tPython\thardskill\t1\t2025-10-22 07:20:51\na3d5a318-af17-11f0-b6df-a2180fc6c472\tYeYvrTgxNMcwLCB3fEFBGz\tJavaScript\thardskill\t2\t2025-10-22 07:20:51\na3d5a355-af17-11f0-b6df-a2180fc6c472\tYeYvrTgxNMcwLCB3fEFBGz\tTypeScript\thardskill\t3\t2025-10-22 07:20:51\na3d5a38d-af17-11f0-b6df-a2180fc6c472\tYeYvrTgxNMcwLCB3fEFBGz\tMongoDB\thardskill\t4\t2025-10-22 07:20:51\na3d5a3c6-af17-11f0-b6df-a2180fc6c472\tYeYvrTgxNMcwLCB3fEFBGz\tMySQL\thardskill\t5\t2025-10-22 07:20:51\na3d5a3f9-af17-11f0-b6df-a2180fc6c472\tYeYvrTgxNMcwLCB3fEFBGz\tDocker\thardskill\t6\t2025-10-22 07:20:51\na3d5a487-af17-11f0-b6df-a2180fc6c472\tYeYvrTgxNMcwLCB3fEFBGz\tTensorFlow\thardskill\t7\t2025-10-22 07:20:51\na3d5a4bb-af17-11f0-b6df-a2180fc6c472\tYeYvrTgxNMcwLCB3fEFBGz\tFlask\thardskill\t8\t2025-10-22 07:20:51\na3d5a4ef-af17-11f0-b6df-a2180fc6c472\tYeYvrTgxNMcwLCB3fEFBGz\tNext.js\thardskill\t9\t2025-10-22 07:20:51\na3d5a51f-af17-11f0-b6df-a2180fc6c472\tYeYvrTgxNMcwLCB3fEFBGz\tn8n\thardskill\t10\t2025-10-22 07:20:51\na3d5a564-af17-11f0-b6df-a2180fc6c472\tYeYvrTgxNMcwLCB3fEFBGz\tWeb Scraping\thardskill\t11\t2025-10-22 07:20:51\na3d5a59a-af17-11f0-b6df-a2180fc6c472\tYeYvrTgxNMcwLCB3fEFBGz\tMachine Learning\thardskill\t12\t2025-10-22 07:20:51\na3d5a5d2-af17-11f0-b6df-a2180fc6c472\tYeYvrTgxNMcwLCB3fEFBGz\tProblem Solving\tsoftskill\t1\t2025-10-22 07:20:51\na3d5a607-af17-11f0-b6df-a2180fc6c472\tYeYvrTgxNMcwLCB3fEFBGz\tData Analysis\tsoftskill\t2\t2025-10-22 07:20:51\na3d5a637-af17-11f0-b6df-a2180fc6c472\tYeYvrTgxNMcwLCB3fEFBGz\tAutomation\tsoftskill\t3\t2025-10-22 07:20:51\na3d5a665-af17-11f0-b6df-a2180fc6c472\tYeYvrTgxNMcwLCB3fEFBGz\tContinuous Improvement\tsoftskill\t4\t2025-10-22 07:20:51\n",
+  "stderr": "",
+  "execution_time_ms": 52
+}

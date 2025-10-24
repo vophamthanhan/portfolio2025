@@ -1,0 +1,36 @@
+{
+  "query": "SELECT * FROM experiences",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 263rhVSojRreLiL.root --database A8fyu726FoK4B4bJuSYf4e --execute SELECT * FROM experiences",
+  "rows": [
+    {
+      "id": "93da0da5-af17-11f0-b6df-a2180fc6c472",
+      "userId": "YeYvrTgxNMcwLCB3fEFBGz",
+      "company": "Moc Seafood Restaurant",
+      "position": "Marketing Automation Specialist",
+      "description": "Built Telegram bots with Python Selenium and API integration to crawl and analyze Korean tourist reviews. Managed Facebook Ads campaigns and coordinated KOL bookings. Applied sentiment analysis and competitor tracking with Python scripts. Automated review collection reducing manual workload by 20 hours per month and enhanced targeting contributing to 10% increase in Korean tourist traffic.",
+      "startDate": "Jan 2024",
+      "endDate": "Jul 2024",
+      "current": "no",
+      "sortOrder": "1",
+      "createdAt": "2025-10-22 07:20:24",
+      "updatedAt": "2025-10-22 07:20:24"
+    },
+    {
+      "id": "93da0eb4-af17-11f0-b6df-a2180fc6c472",
+      "userId": "YeYvrTgxNMcwLCB3fEFBGz",
+      "company": "TravelThru",
+      "position": "Intern Data Engineer",
+      "description": "Developed Python bots to crawl web data ensuring accurate datasets. Automated repetitive tasks with Microsoft Power Automate. Processed and cleaned large datasets in MongoDB. Reduced manual data collection time by 30% and improved workflow efficiency through automation scripts.",
+      "startDate": "Mar 2023",
+      "endDate": "Jun 2023",
+      "current": "no",
+      "sortOrder": "2",
+      "createdAt": "2025-10-22 07:20:24",
+      "updatedAt": "2025-10-22 07:20:24"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tuserId\tcompany\tposition\tdescription\tstartDate\tendDate\tcurrent\tsortOrder\tcreatedAt\tupdatedAt\n93da0da5-af17-11f0-b6df-a2180fc6c472\tYeYvrTgxNMcwLCB3fEFBGz\tMoc Seafood Restaurant\tMarketing Automation Specialist\tBuilt Telegram bots with Python Selenium and API integration to crawl and analyze Korean tourist reviews. Managed Facebook Ads campaigns and coordinated KOL bookings. Applied sentiment analysis and competitor tracking with Python scripts. Automated review collection reducing manual workload by 20 hours per month and enhanced targeting contributing to 10% increase in Korean tourist traffic.\tJan 2024\tJul 2024\tno\t1\t2025-10-22 07:20:24\t2025-10-22 07:20:24\n93da0eb4-af17-11f0-b6df-a2180fc6c472\tYeYvrTgxNMcwLCB3fEFBGz\tTravelThru\tIntern Data Engineer\tDeveloped Python bots to crawl web data ensuring accurate datasets. Automated repetitive tasks with Microsoft Power Automate. Processed and cleaned large datasets in MongoDB. Reduced manual data collection time by 30% and improved workflow efficiency through automation scripts.\tMar 2023\tJun 2023\tno\t2\t2025-10-22 07:20:24\t2025-10-22 07:20:24\n",
+  "stderr": "",
+  "execution_time_ms": 55
+}

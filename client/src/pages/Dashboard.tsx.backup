@@ -1,0 +1,97 @@
+import { useAuth } from "@/_core/hooks/useAuth";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { useState } from "react";
+import { useLocation } from "wouter";
+
+const ADMIN_PASSWORD = "Thanhan1@";
+
+// Password protection wrapper
+export default function Dashboard() {
+  const [, setLocation] = useLocation();
+  const [isPasswordVerified, setIsPasswordVerified] = useState(false);
+  const [passwordInput, setPasswordInput] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+
+  const handlePasswordSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (passwordInput === ADMIN_PASSWORD) {
+      setIsPasswordVerified(true);
+      setPasswordError("");
+    } else {
+      setPasswordError("Mật khẩu không đúng. Vui lòng thử lại.");
+      setPasswordInput("");
+    }
+  };
+
+  if (!isPasswordVerified) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
+        <Card className="w-full max-w-md p-6">
+          <div className="text-center mb-6">
+            <h1 className="text-2xl font-bold mb-2">Dashboard Access</h1>
+            <p className="text-gray-600">Nhập mật khẩu để truy cập Dashboard</p>
+          </div>
+          <form onSubmit={handlePasswordSubmit} className="space-y-4">
+            <div>
+              <Label htmlFor="password">Mật khẩu</Label>
+              <Input
+                id="password"
+                type="password"
+                value={passwordInput}
+                onChange={(e) => setPasswordInput(e.target.value)}
+                placeholder="Nhập mật khẩu"
+                className="mt-1"
+                autoFocus
+              />
+              {passwordError && (
+                <p className="text-red-600 text-sm mt-2">{passwordError}</p>
+              )}
+            </div>
+            <Button type="submit" className="w-full">
+              Xác nhận
+            </Button>
+            <Button
+              type="button"
+              variant="outline"
+              className="w-full"
+              onClick={() => setLocation("/")}
+            >
+              Quay lại trang chủ
+            </Button>
+          </form>
+        </Card>
+      </div>
+    );
+  }
+
+  return <DashboardContent />;
+}
+
+// Actual dashboard content - separate component to avoid hooks issues
+function DashboardContent() {
+  return (
+    <div className="min-h-screen bg-gray-50 p-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex items-center justify-between mb-8">
+          <h1 className="text-3xl font-bold">Portfolio Dashboard</h1>
+          <Button variant="outline" onClick={() => window.location.href = "/"}>
+            Quay lại trang chủ
+          </Button>
+        </div>
+        
+        <Card className="p-6">
+          <p className="text-center text-gray-600">
+            Dashboard đang được phát triển. Bạn có thể quản lý nội dung portfolio tại đây.
+          </p>
+          <p className="text-center text-sm text-gray-500 mt-4">
+            Để chỉnh sửa nội dung, vui lòng truy cập database hoặc sử dụng API endpoints.
+          </p>
+        </Card>
+      </div>
+    </div>
+  );
+}
+

@@ -1,0 +1,36 @@
+{
+  "query": "SELECT * FROM projects",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 263rhVSojRreLiL.root --database A8fyu726FoK4B4bJuSYf4e --execute SELECT * FROM projects",
+  "rows": [
+    {
+      "id": "9ee8cd48-af17-11f0-b6df-a2180fc6c472",
+      "title": "Zalo Engagement & Lifecycle Automation System",
+      "description": "Developed a comprehensive automation system using n8n, Docker, Notion, Zalo, and Grok AI. Streamlined customer data synchronization, automated personalized Zalo renewal reminders, and generated real-time admin reports. Architected and deployed using Docker and n8n, integrated Grok AI and Zalo API for personalized messaging.",
+      "imageUrl": "",
+      "tags": "[\"n8n\",\"Docker\",\"Notion API\",\"Zalo API\",\"Grok AI\",\"JavaScript\",\"Python\"]",
+      "category": "Automation",
+      "featured": "yes",
+      "sortOrder": "1",
+      "userId": "YeYvrTgxNMcwLCB3fEFBGz",
+      "createdAt": "2025-10-22 07:20:43",
+      "updatedAt": "2025-10-22 07:20:43"
+    },
+    {
+      "id": "9ee8ce6a-af17-11f0-b6df-a2180fc6c472",
+      "title": "Hand Draw Object Detect — AI Drawing Recognition Platform",
+      "description": "A web-based demo application that detects and classifies hand-drawn digits in real time. Created an interactive drawing canvas with HTML, CSS, and jQuery. Developed a Flask backend with CNN model using TensorFlow/Keras on MNIST dataset. Implemented image preprocessing with OpenCV and NumPy for accurate predictions.",
+      "imageUrl": "",
+      "tags": "[\"Python\",\"Flask\",\"TensorFlow\",\"Keras\",\"OpenCV\",\"Machine Learning\",\"AI\"]",
+      "category": "Machine Learning",
+      "featured": "yes",
+      "sortOrder": "2",
+      "userId": "YeYvrTgxNMcwLCB3fEFBGz",
+      "createdAt": "2025-10-22 07:20:43",
+      "updatedAt": "2025-10-22 07:20:43"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttitle\tdescription\timageUrl\ttags\tcategory\tfeatured\tsortOrder\tuserId\tcreatedAt\tupdatedAt\n9ee8cd48-af17-11f0-b6df-a2180fc6c472\tZalo Engagement & Lifecycle Automation System\tDeveloped a comprehensive automation system using n8n, Docker, Notion, Zalo, and Grok AI. Streamlined customer data synchronization, automated personalized Zalo renewal reminders, and generated real-time admin reports. Architected and deployed using Docker and n8n, integrated Grok AI and Zalo API for personalized messaging.\t\t[\"n8n\",\"Docker\",\"Notion API\",\"Zalo API\",\"Grok AI\",\"JavaScript\",\"Python\"]\tAutomation\tyes\t1\tYeYvrTgxNMcwLCB3fEFBGz\t2025-10-22 07:20:43\t2025-10-22 07:20:43\n9ee8ce6a-af17-11f0-b6df-a2180fc6c472\tHand Draw Object Detect — AI Drawing Recognition Platform\tA web-based demo application that detects and classifies hand-drawn digits in real time. Created an interactive drawing canvas with HTML, CSS, and jQuery. Developed a Flask backend with CNN model using TensorFlow/Keras on MNIST dataset. Implemented image preprocessing with OpenCV and NumPy for accurate predictions.\t\t[\"Python\",\"Flask\",\"TensorFlow\",\"Keras\",\"OpenCV\",\"Machine Learning\",\"AI\"]\tMachine Learning\tyes\t2\tYeYvrTgxNMcwLCB3fEFBGz\t2025-10-22 07:20:43\t2025-10-22 07:20:43\n",
+  "stderr": "",
+  "execution_time_ms": 108
+}

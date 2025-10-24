@@ -1,0 +1,9 @@
+{
+  "query": "SET @user_id = (SELECT id FROM users LIMIT 1);\n\nINSERT INTO education (id, userId, institution, degree, field, startDate, endDate, sortOrder, createdAt, updatedAt)\nVALUES\n(UUID(), @user_id, 'University of Engineering and Technology', 'Bachelor of Data Science', \n'VN–UK Institute for Research and Executive Education - Specialization in Advanced Manufacturing',\n'Sep 2020', 'Present', '1', NOW(), NOW());",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 263rhVSojRreLiL.root --database A8fyu726FoK4B4bJuSYf4e --execute SET @user_id = (SELECT id FROM users LIMIT 1);\n\nINSERT INTO education (id, userId, institution, degree, field, startDate, endDate, sortOrder, createdAt, updatedAt)\nVALUES\n(UUID(), @user_id, 'University of Engineering and Technology', 'Bachelor of Data Science', \n'VN–UK Institute for Research and Executive Education - Specialization in Advanced Manufacturing',\n'Sep 2020', 'Present', '1', NOW(), NOW());",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 60
+}
